@@ -74,6 +74,8 @@ http://117.169.124.37:6610/ysten-businessmobile/live/fhzixun/1.m3u8
 https://news.cgtn.com/resource/live/english/cgtn-news.m3u8
 #EXTINF:-1 tvg-id="CNCYingYu.cn" tvg-country="CN" tvg-language="English" tvg-logo="" group-title="",CNC英语 (720p)
 http://source07.v.news.cn/live/CNC_EN/playlist.m3u8
+#EXTINF:0, tvg-logo="https://cbschicago.files.wordpress.com/2015/11/cbsn-generic.jpg?w=1280" group-title="",CBSN
+https://cbsn-us-cedexis.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/master.m3u8?iu=/8264/vaw-can/desktop/cbsnews
 #EXTINF:-1 tvg-id="NewTVZhongGuoGongFu.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="" group-title="",NewTV中国功夫 (1080p)
 http://39.134.66.66/PLTV/88888888/224/3221225604/index.m3u8
 #EXTINF:-1 tvg-id="NewTVJunShiPingLun.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="" group-title="",NewTV军事评论 (1080p)

@@ -70,6 +70,10 @@ http://39.134.115.163:8080/PLTV/88888910/224/3221225908/index.m3u8
 http://117.169.124.43:6610/ysten-businessmobile/live/fhchinese/index.m3u8
 #EXTINF:-1 tvg-id="FengHuangZiXun.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="" group-title="",凤凰资讯 (720p)
 http://117.169.124.37:6610/ysten-businessmobile/live/fhzixun/1.m3u8
+#EXTINF:-1 tvg-id="CGTNEnglish.cn" tvg-country="CN" tvg-language="English" tvg-logo="https://i.imgur.com/Pb7DplW.png" group-title="",CGTN English (720p)
+https://live.cgtn.com/1000/prog_index.m3u8
+#EXTINF:-1 tvg-id="CNCYingYu.cn" tvg-country="CN" tvg-language="English" tvg-logo="" group-title="",CNC英语 (720p)
+http://source07.v.news.cn/live/CNC_EN/playlist.m3u8
 #EXTINF:-1 tvg-id="NewTVZhongGuoGongFu.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="" group-title="",NewTV中国功夫 (1080p)
 http://39.134.66.66/PLTV/88888888/224/3221225604/index.m3u8
 #EXTINF:-1 tvg-id="NewTVJunShiPingLun.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="" group-title="",NewTV军事评论 (1080p)
@@ -98,3 +102,13 @@ http://39.134.66.66/PLTV/88888888/224/3221225637/index.m3u8
 http://39.134.66.66/PLTV/88888888/224/3221225642/index.m3u8
 #EXTINF:-1 tvg-id="NewTVJinPaiZongYi.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="" group-title="",NewTV金牌综艺 (1080p)
 http://39.134.66.66/PLTV/88888888/224/3221225525/index.m3u8
+#EXTINF:-1 tvg-id="SiTVXinShiJueTai.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="" group-title="",SiTV新视觉台 (1080p)
+http://112.25.48.68/live/program/live/xsjhd/4000000/mnf.m3u8
+#EXTINF:-1 tvg-id="SiTVQuanJiShiTai.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="" group-title="",SiTV全纪实台 (1080p)
+http://112.25.48.68/live/program/live/qjshd/4000000/mnf.m3u8
+#EXTINF:-1 tvg-id="SiTVJiSuQiChe.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="" group-title="",SiTV极速汽车 (1080p)
+http://112.25.48.68/live/program/live/jsqchd/4000000/mnf.m3u8
+#EXTINF:-1 tvg-id="SiTVHuanXiaoJuChang.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="" group-title="",SiTV欢笑剧场 (1080p)
+http://112.25.48.68/live/program/live/hxjchd/4000000/mnf.m3u8
+#EXTINF:-1 tvg-id="SiTVMeiLiZuQiu.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="" group-title="",SiTV魅力足球 (1080p)
+http://112.25.48.68/live/program/live/mlyyhd/4000000/mnf.m3u8

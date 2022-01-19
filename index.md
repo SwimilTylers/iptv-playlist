@@ -12,7 +12,9 @@
 
 ### IPTV-M3U Sources
 
-
-
 1. cn.m3u: [https://swimiltylers.github.io/iptv-playlist/content/cn.m3u](https://swimiltylers.github.io/iptv-playlist/content/cn.m3u)
 2. ext.m3u: [https://swimiltylers.github.io/iptv-playlist/content/ext.m3u](https://swimiltylers.github.io/iptv-playlist/content/ext.m3u)
+
+### IPTV-EPG Sources
+
+1. tv.cctv.com: [https://iptv-org.github.io/epg/guides/cn/tv.cctv.com.epg.xml](https://iptv-org.github.io/epg/guides/cn/tv.cctv.com.epg.xml)

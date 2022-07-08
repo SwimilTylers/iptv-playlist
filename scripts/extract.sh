@@ -22,8 +22,9 @@ function read_channels() {
 
     while read -r line
     do
-      CH=$(awk '{ print $1 }' <<< "$line")
-      ID=$(awk '{ print $2 }' <<< "$line")
+      line=$(tr -d '\r' <<< "$line")
+      CH=$(awk -F',' '{ print $1 }' <<< "$line")
+      ID=$(awk -F',' '{ print $2 }' <<< "$line")
 
       CHANNELS+=("$CH")
       CHANNELS_ID+=("$ID")
@@ -48,7 +49,7 @@ function query() {
     fi
     
     if grep -q "$CHANNEL_ID" <<< "$DB"; then
-      QUERY_RES=$(grep -A1 "$CHANNEL_ID" <<< "$DB" | sed -n 'n;p' | head -n 1)
+      QUERY_RES=$(grep -A1 "$CHANNEL_ID" <<< "$DB" | sed -n -e '/^http/{p;q}')
     else
       QUERY_RES=''
     fi
@@ -58,10 +59,6 @@ function write_output() {
     local CHANNEL_ID=$1
     local CHANNEL=$2
     local URL=$3
-
-    if [ -f $TO ]; then
-        echo "" >> $TO
-    fi
 
     echo "#EXTINF:-1 tvg-id=\"$CHANNEL_ID\" tvg-country=\"CN\" tvg-language=\"Chinese;Mandarin Chinese\" tvg-logo=\"\" group-title=\"\",$CHANNEL" >> $TO
     echo "$URL" >> $TO

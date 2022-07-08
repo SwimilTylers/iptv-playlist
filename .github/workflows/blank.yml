@@ -34,9 +34,14 @@ jobs:
       - name: Update IPTV playlist
         run: ./scripts/extract.sh -I cn.m3u -O content/auto.m3u -C ./scripts/auto.cfg
         
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+        
       - name: Release the playlist
         uses: test-room-7/action-update-file@v1
         with:
           file-path: content/auto.m3u
-          commit-msg: Update resources
+          commit-msg: Release IPTV Playlist (${{ steps.date.outputs.date }})
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages

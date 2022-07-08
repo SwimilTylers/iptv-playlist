@@ -49,7 +49,7 @@ function query() {
     fi
     
     if grep -q "$CHANNEL_ID" <<< "$DB"; then
-      QUERY_RES=$(grep -A1 "$CHANNEL_ID" <<< "$DB" | sed -n -e '/^http/{p;q}')
+      QUERY_RES=$(grep -A1 "$CHANNEL_ID" <<< "$DB" | sed -n -e '/^http.*m3u/{p;q}')
     else
       QUERY_RES=''
     fi

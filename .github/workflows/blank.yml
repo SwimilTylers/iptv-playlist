@@ -35,6 +35,8 @@ jobs:
         run: ./scripts/extract.sh -I cn.m3u -O content/auto.m3u -C ./scripts/auto.cfg
         
       - name: Release the playlist
-        uses: tj-actions/changed-files@v23.1
+        uses: test-room-7/action-update-file@v1
         with:
-          files: content/auto.m3u
+          file-path: content/auto.m3u
+          commit-msg: Update resources
+          github-token: ${{ secrets.GITHUB_TOKEN }}
